@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DBn000006MvIj',
+				'Agentforce_Web_Chat_Channel_2',
+				'https://streetfleet--partcopy.sandbox.my.site.com/ESWAgentforceWebChatCh1768543124116',
+				{
+					scrt2URL: 'https://streetfleet--partcopy.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://streetfleet--partcopy.sandbox.my.site.com/ESWAgentforceWebChatCh1768543124116/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
